@@ -1,5 +1,7 @@
 const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
+const whatsappWrap = document.querySelector(".whatsapp-float");
+const whatsappButton = document.querySelector(".whatsapp");
 
 navToggle?.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("is-open");
@@ -13,78 +15,28 @@ mainNav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-const canvas = document.querySelector(".network-canvas");
-const ctx = canvas?.getContext("2d");
-let particles = [];
+whatsappButton?.addEventListener("click", () => {
+  const isOpen = whatsappWrap?.classList.toggle("is-open");
+  whatsappButton.setAttribute("aria-expanded", String(Boolean(isOpen)));
+});
 
-function resizeCanvas() {
-  if (!canvas || !ctx) return;
-  const ratio = window.devicePixelRatio || 1;
-  canvas.width = canvas.offsetWidth * ratio;
-  canvas.height = canvas.offsetHeight * ratio;
-  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-  createParticles();
-}
-
-function createParticles() {
-  if (!canvas) return;
-  const count = Math.min(95, Math.max(42, Math.floor(canvas.offsetWidth / 22)));
-  particles = Array.from({ length: count }, () => ({
-    x: Math.random() * canvas.offsetWidth,
-    y: Math.random() * canvas.offsetHeight,
-    vx: (Math.random() - 0.5) * 0.38,
-    vy: (Math.random() - 0.5) * 0.38,
-    r: 2 + Math.random() * 3,
-  }));
-}
-
-function drawNetwork() {
-  if (!canvas || !ctx) return;
-  ctx.clearRect(0, 0, canvas.offsetWidth, canvas.offsetHeight);
-
-  particles.forEach((p) => {
-    p.x += p.vx;
-    p.y += p.vy;
-
-    if (p.x < 0 || p.x > canvas.offsetWidth) p.vx *= -1;
-    if (p.y < 0 || p.y > canvas.offsetHeight) p.vy *= -1;
-
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-    ctx.fillStyle = "rgba(56, 189, 248, 0.88)";
-    ctx.shadowBlur = 12;
-    ctx.shadowColor = "rgba(31, 123, 242, 0.9)";
-    ctx.fill();
-    ctx.shadowBlur = 0;
-  });
-
-  for (let i = 0; i < particles.length; i += 1) {
-    for (let j = i + 1; j < particles.length; j += 1) {
-      const a = particles[i];
-      const b = particles[j];
-      const dx = a.x - b.x;
-      const dy = a.y - b.y;
-      const distance = Math.hypot(dx, dy);
-
-      if (distance < 145) {
-        ctx.beginPath();
-        ctx.moveTo(a.x, a.y);
-        ctx.lineTo(b.x, b.y);
-        ctx.strokeStyle = `rgba(31, 123, 242, ${0.24 - distance / 760})`;
-        ctx.lineWidth = 1;
-        ctx.stroke();
-      }
-    }
+document.addEventListener("click", (event) => {
+  if (!whatsappWrap || whatsappWrap.contains(event.target)) {
+    return;
   }
 
-  requestAnimationFrame(drawNetwork);
-}
+  whatsappWrap.classList.remove("is-open");
+  whatsappButton?.setAttribute("aria-expanded", "false");
+});
 
-if (canvas && ctx) {
-  resizeCanvas();
-  drawNetwork();
-  window.addEventListener("resize", resizeCanvas);
-}
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") {
+    return;
+  }
+
+  whatsappWrap?.classList.remove("is-open");
+  whatsappButton?.setAttribute("aria-expanded", "false");
+});
 
 const stateData = [
   { uf: "AM", name: "Amazonas", region: "Norte", capital: "Manaus", x: 136, y: 116, color: "var(--teal)", service: "Rede óptica metropolitana", description: "Implantação de backbone e interligação entre prédios públicos.", projects: ["Fibra óptica monomodo", "DIO, fusão e certificação", "CFTV institucional"] },

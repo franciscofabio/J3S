@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" role="img" aria-label="Equipe administrativa em escritório corporativo">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08131b"/>
+      <stop offset="1" stop-color="#02060d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="120" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#34d399"/>
+      <stop offset="0.55" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(888 232) rotate(90) scale(312 240)">
+      <stop stop-color="#34d399" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="78" y="96" width="356" height="708" rx="30" fill="#06111b" stroke="#19384a" stroke-opacity=".74"/>
+  <rect x="112" y="134" width="288" height="64" rx="18" fill="#0d1a28"/>
+  <rect x="112" y="220" width="288" height="64" rx="18" fill="#0d1a28"/>
+  <rect x="112" y="306" width="288" height="64" rx="18" fill="#0d1a28"/>
+  <circle cx="938" cy="212" r="244" fill="url(#glow)"/>
+  <circle cx="900" cy="176" r="96" fill="#34d399" fill-opacity=".12" filter="url(#blur)"/>
+  <path d="M500 624c0-100 78-182 174-182s174 82 174 182v44H500v-44Z" fill="#09131d"/>
+  <path d="M568 402c0-56 46-102 106-102 58 0 106 46 106 102s-48 104-106 104c-60 0-106-48-106-104Z" fill="#d9e7f3"/>
+  <path d="M524 710c8-84 70-138 150-138s142 54 150 138l8 64H516l8-64Z" fill="url(#accent)"/>
+  <path d="M582 606c24-18 50-28 82-28s58 10 82 28l-16 168H598l-16-168Z" fill="#0d1726" opacity=".72"/>
+  <path d="M540 460c30-26 72-40 124-40 52 0 94 14 124 40" stroke="#34d399" stroke-opacity=".42" stroke-width="10" stroke-linecap="round"/>
+  <path d="M572 352c0 34 28 62 62 62s62-28 62-62-28-62-62-62-62 28-62 62Z" fill="#f8fbff"/>
+  <rect x="830" y="564" width="226" height="162" rx="28" fill="#091521" stroke="#19384a" stroke-opacity=".8"/>
+  <path d="M852 612h178M852 644h146M852 676h164" stroke="#34d399" stroke-opacity=".24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M854 596h88M854 596l18-18M842 614l18 18" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="118" cy="160" r="12" fill="#34d399" fill-opacity=".75"/>
+  <circle cx="118" cy="252" r="8" fill="#14b8a6" fill-opacity=".45"/>
+  <circle cx="118" cy="344" r="8" fill="#0ea5e9" fill-opacity=".45"/>
+  <circle cx="118" cy="436" r="8" fill="#34d399" fill-opacity=".45"/>
+  <text x="88" y="812" fill="#d9e7f4" fill-opacity=".82" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">SUPORTE ADMINISTRATIVO</text>
+  <rect x="88" y="832" width="396" height="4" rx="2" fill="#34d399" fill-opacity=".55"/>
+</svg>

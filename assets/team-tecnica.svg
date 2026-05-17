@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" role="img" aria-label="Equipe técnica em ambiente corporativo">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#09121f"/>
+      <stop offset="1" stop-color="#02060d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="120" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.55" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(860 230) rotate(90) scale(330 260)">
+      <stop stop-color="#38bdf8" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="72" y="78" width="312" height="744" rx="28" fill="#06101b" stroke="#16324b" stroke-opacity=".75"/>
+  <rect x="110" y="120" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <rect x="110" y="228" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <rect x="110" y="336" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <rect x="110" y="444" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <rect x="110" y="552" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <rect x="110" y="660" width="236" height="84" rx="18" fill="#0b1a2b"/>
+  <circle cx="972" cy="200" r="246" fill="url(#glow)"/>
+  <circle cx="910" cy="182" r="96" fill="#38bdf8" fill-opacity=".12" filter="url(#blur)"/>
+  <path d="M526 662c0-102 76-186 174-186s174 84 174 186v24H526v-24Z" fill="#0a1320"/>
+  <path d="M596 398c0-56 46-102 104-102s104 46 104 102-46 102-104 102-104-46-104-102Z" fill="#d9e7f4"/>
+  <path d="M552 704c10-78 68-132 148-132s138 54 148 132l10 72H542l10-72Z" fill="url(#accent)"/>
+  <path d="M590 608c22-20 48-30 78-30s56 10 78 30l-20 196H610l-20-196Z" fill="#0d1726" opacity=".72"/>
+  <path d="M528 450c34-38 82-58 140-58 56 0 104 18 136 54" stroke="#38bdf8" stroke-opacity=".45" stroke-width="10" stroke-linecap="round"/>
+  <path d="M616 352c0 34 28 62 62 62s62-28 62-62-28-62-62-62-62 28-62 62Z" fill="#f8fbff"/>
+  <circle cx="118" cy="156" r="14" fill="#38bdf8" fill-opacity=".7"/>
+  <circle cx="128" cy="264" r="9" fill="#14b8a6" fill-opacity=".55"/>
+  <circle cx="128" cy="372" r="9" fill="#38bdf8" fill-opacity=".45"/>
+  <circle cx="128" cy="480" r="9" fill="#14b8a6" fill-opacity=".45"/>
+  <circle cx="128" cy="588" r="9" fill="#38bdf8" fill-opacity=".45"/>
+  <circle cx="128" cy="696" r="9" fill="#14b8a6" fill-opacity=".45"/>
+  <rect x="806" y="578" width="244" height="136" rx="24" fill="#091521" stroke="#1b3752" stroke-opacity=".8"/>
+  <path d="M834 616h188M834 644h156M834 672h208" stroke="#38bdf8" stroke-opacity=".25" stroke-width="8" stroke-linecap="round"/>
+  <path d="M840 606l18 18 30-30" stroke="#22c55e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="88" y="812" fill="#cdefff" fill-opacity=".82" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">ENGENHARIA DE CAMPO</text>
+  <rect x="88" y="832" width="360" height="4" rx="2" fill="#38bdf8" fill-opacity=".55"/>
+</svg>

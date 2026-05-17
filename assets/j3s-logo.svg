@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" fill="none" role="img" aria-label="J3S Engenharia">
+  <defs>
+    <linearGradient id="chrome" x1="120" y1="48" x2="620" y2="196" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="0.18" stop-color="#dfe7f1"/>
+      <stop offset="0.42" stop-color="#b6c1cf"/>
+      <stop offset="0.62" stop-color="#f7fbff"/>
+      <stop offset="0.82" stop-color="#9aa7b8"/>
+      <stop offset="1" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="142" y1="108" x2="614" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="0.5" stop-color="#c9d3df"/>
+      <stop offset="1" stop-color="#8795a8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="186" x2="572" y2="186" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#1f7bf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#020814" flood-opacity=".42"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <text x="382" y="112" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-0.08em" fill="#0a1220" opacity=".78">J3S</text>
+    <text x="376" y="104" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="104" font-weight="800" letter-spacing="-0.08em" fill="url(#chrome)">J3S</text>
+
+    <text x="382" y="186" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="0.28em" fill="#0a1220" opacity=".78">ENGENHARIA</text>
+    <text x="376" y="178" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900" letter-spacing="0.28em" fill="url(#steel)">ENGENHARIA</text>
+
+    <rect x="188" y="196" width="384" height="4" rx="2" fill="url(#accent)"/>
+  </g>
+</svg>

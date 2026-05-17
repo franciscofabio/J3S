@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" role="img" aria-label="Equipe de pós-venda acompanhando cliente corporativo">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#03060c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="120" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.55" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 228) rotate(90) scale(320 250)">
+      <stop stop-color="#a78bfa" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="78" y="92" width="350" height="720" rx="30" fill="#07111b" stroke="#24374e" stroke-opacity=".72"/>
+  <rect x="112" y="134" width="282" height="72" rx="18" fill="#101a29"/>
+  <rect x="112" y="228" width="282" height="72" rx="18" fill="#101a29"/>
+  <rect x="112" y="322" width="282" height="72" rx="18" fill="#101a29"/>
+  <circle cx="938" cy="210" r="244" fill="url(#glow)"/>
+  <circle cx="904" cy="174" r="100" fill="#a78bfa" fill-opacity=".12" filter="url(#blur)"/>
+  <path d="M498 628c0-100 78-182 174-182s174 82 174 182v48H498v-48Z" fill="#09131d"/>
+  <path d="M566 402c0-56 46-102 106-102 58 0 106 46 106 102s-48 104-106 104c-60 0-106-48-106-104Z" fill="#dce8f3"/>
+  <path d="M524 714c8-84 70-140 146-140 78 0 140 56 150 140l8 62H516l8-62Z" fill="url(#accent)"/>
+  <path d="M580 608c24-18 50-28 80-28s56 10 80 28l-16 170H596l-16-170Z" fill="#0d1726" opacity=".72"/>
+  <path d="M540 458c30-26 72-40 124-40 52 0 94 14 124 40" stroke="#a78bfa" stroke-opacity=".42" stroke-width="10" stroke-linecap="round"/>
+  <path d="M572 352c0 34 28 62 62 62s62-28 62-62-28-62-62-62-62 28-62 62Z" fill="#f8fbff"/>
+  <rect x="820" y="562" width="238" height="166" rx="28" fill="#091521" stroke="#24374e" stroke-opacity=".8"/>
+  <path d="M846 606h186M846 638h144M846 670h164" stroke="#a78bfa" stroke-opacity=".24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M852 600c14-14 32-22 52-22s38 8 52 22" stroke="#22c55e" stroke-width="8" stroke-linecap="round"/>
+  <path d="M952 600c14-14 32-22 52-22s38 8 52 22" stroke="#38bdf8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="118" cy="160" r="12" fill="#a78bfa" fill-opacity=".75"/>
+  <circle cx="118" cy="258" r="8" fill="#818cf8" fill-opacity=".45"/>
+  <circle cx="118" cy="356" r="8" fill="#38bdf8" fill-opacity=".45"/>
+  <circle cx="118" cy="454" r="8" fill="#a78bfa" fill-opacity=".45"/>
+  <text x="88" y="812" fill="#d9e7f4" fill-opacity=".82" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">PÓS-VENDA E SUPORTE</text>
+  <rect x="88" y="832" width="364" height="4" rx="2" fill="#a78bfa" fill-opacity=".55"/>
+</svg>

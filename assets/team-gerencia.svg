@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" role="img" aria-label="Equipe de gerência e supervisão em ambiente executivo">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#09131d"/>
+      <stop offset="1" stop-color="#03060c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="210" y1="120" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#60a5fa"/>
+      <stop offset="0.5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(884 220) rotate(90) scale(320 240)">
+      <stop stop-color="#60a5fa" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="72" y="88" width="388" height="716" rx="30" fill="#07111c" stroke="#1d3147" stroke-opacity=".74"/>
+  <rect x="108" y="120" width="312" height="82" rx="18" fill="#0f1d2d"/>
+  <rect x="108" y="226" width="312" height="82" rx="18" fill="#0f1d2d"/>
+  <rect x="108" y="332" width="312" height="82" rx="18" fill="#0f1d2d"/>
+  <circle cx="936" cy="208" r="248" fill="url(#glow)"/>
+  <circle cx="900" cy="174" r="100" fill="#38bdf8" fill-opacity=".12" filter="url(#blur)"/>
+  <path d="M474 618c0-98 76-180 170-180s170 82 170 180v54H474v-54Z" fill="#0a1320"/>
+  <path d="M540 388c0-54 46-98 104-98s104 44 104 98-46 100-104 100-104-46-104-100Z" fill="#dce8f3"/>
+  <path d="M500 706c8-82 66-134 144-134s136 52 144 134l12 68H488l12-68Z" fill="url(#accent)"/>
+  <path d="M556 604c22-18 46-28 74-28s54 10 76 28l-18 170H574l-18-170Z" fill="#0d1726" opacity=".7"/>
+  <path d="M536 458c30-26 70-40 122-40 50 0 92 14 122 40" stroke="#60a5fa" stroke-opacity=".42" stroke-width="10" stroke-linecap="round"/>
+  <path d="M566 350c0 34 28 62 62 62s62-28 62-62-28-62-62-62-62 28-62 62Z" fill="#f8fbff"/>
+  <rect x="826" y="562" width="226" height="164" rx="28" fill="#091522" stroke="#1d3147" stroke-opacity=".8"/>
+  <path d="M850 610h178M850 642h132M850 674h160" stroke="#60a5fa" stroke-opacity=".24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M854 596c22-18 48-28 78-28s56 10 78 28" stroke="#22c55e" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="114" cy="160" r="12" fill="#60a5fa" fill-opacity=".75"/>
+  <circle cx="114" cy="260" r="8" fill="#38bdf8" fill-opacity=".45"/>
+  <circle cx="114" cy="360" r="8" fill="#6366f1" fill-opacity=".45"/>
+  <circle cx="114" cy="460" r="8" fill="#38bdf8" fill-opacity=".45"/>
+  <text x="88" y="812" fill="#d9e7f4" fill-opacity=".82" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">GESTÃO E SUPERVISÃO</text>
+  <rect x="88" y="832" width="384" height="4" rx="2" fill="#60a5fa" fill-opacity=".55"/>
+</svg>

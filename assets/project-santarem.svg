@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" role="img" aria-label="Aeroporto de Santarem PA">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c6d4e2"/>
+      <stop offset="0.55" stop-color="#8ca2b8"/>
+      <stop offset="1" stop-color="#536679"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="360" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#525d69"/>
+      <stop offset="1" stop-color="#2f3943"/>
+    </linearGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7dee6"/>
+      <stop offset="1" stop-color="#7d8791"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(580 130) rotate(90) scale(360 180)">
+      <stop stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="800" rx="40"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#sky)"/>
+    <circle cx="580" cy="126" r="280" fill="url(#light)"/>
+    <rect y="360" width="1200" height="440" fill="url(#floor)"/>
+    <rect x="76" y="104" width="1048" height="600" rx="30" fill="#6c7884" fill-opacity=".28"/>
+    <rect x="114" y="140" width="972" height="504" rx="24" fill="#49545e" fill-opacity=".74"/>
+    <rect x="132" y="164" width="940" height="70" rx="16" fill="#e9eef4" fill-opacity=".8"/>
+    <g opacity=".82">
+      <rect x="154" y="184" width="34" height="30" rx="8" fill="#d44d4d"/>
+      <rect x="198" y="184" width="34" height="30" rx="8" fill="#f0c44e"/>
+      <rect x="242" y="184" width="34" height="30" rx="8" fill="#6ac2ef"/>
+    </g>
+    <g>
+      <rect x="164" y="260" width="872" height="220" rx="18" fill="#dde4ea" fill-opacity=".08"/>
+      <rect x="196" y="282" width="80" height="164" rx="14" fill="#d9e1e9" fill-opacity=".88"/>
+      <rect x="288" y="282" width="96" height="164" rx="14" fill="#cfd7e0" fill-opacity=".86"/>
+      <rect x="396" y="282" width="118" height="164" rx="14" fill="#d9e1e9" fill-opacity=".84"/>
+      <rect x="526" y="282" width="94" height="164" rx="14" fill="#cfd7e0" fill-opacity=".86"/>
+      <rect x="632" y="282" width="88" height="164" rx="14" fill="#d9e1e9" fill-opacity=".88"/>
+      <rect x="732" y="282" width="100" height="164" rx="14" fill="#cfd7e0" fill-opacity=".86"/>
+      <rect x="844" y="282" width="156" height="164" rx="14" fill="#d9e1e9" fill-opacity=".88"/>
+    </g>
+    <g opacity=".95">
+      <rect x="154" y="520" width="892" height="20" rx="10" fill="#202a33"/>
+      <rect x="154" y="540" width="892" height="10" rx="5" fill="#111820"/>
+    </g>
+    <g fill="url(#seat)">
+      <rect x="186" y="568" width="82" height="24" rx="12"/>
+      <rect x="280" y="568" width="82" height="24" rx="12"/>
+      <rect x="374" y="568" width="82" height="24" rx="12"/>
+      <rect x="468" y="568" width="82" height="24" rx="12"/>
+      <rect x="562" y="568" width="82" height="24" rx="12"/>
+      <rect x="656" y="568" width="82" height="24" rx="12"/>
+      <rect x="750" y="568" width="82" height="24" rx="12"/>
+    </g>
+    <g opacity=".92">
+      <rect x="204" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="298" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="392" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="486" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="580" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="674" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="768" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+      <rect x="862" y="592" width="62" height="54" rx="8" fill="#4d5c68"/>
+    </g>
+    <rect x="228" y="226" width="80" height="14" rx="7" fill="#f4f7fb" fill-opacity=".88"/>
+    <rect x="330" y="226" width="120" height="14" rx="7" fill="#f4f7fb" fill-opacity=".66"/>
+    <rect x="468" y="226" width="92" height="14" rx="7" fill="#f4f7fb" fill-opacity=".72"/>
+    <rect x="576" y="226" width="142" height="14" rx="7" fill="#f4f7fb" fill-opacity=".54"/>
+    <rect x="738" y="226" width="110" height="14" rx="7" fill="#f4f7fb" fill-opacity=".62"/>
+    <rect x="862" y="226" width="86" height="14" rx="7" fill="#f4f7fb" fill-opacity=".7"/>
+    <path d="M130 664l120-34 132 22 138-26 136 34 144-28 130 22 104-18" stroke="#d6b04a" stroke-opacity=".18" stroke-width="10" stroke-linecap="round"/>
+    <text x="118" y="708" fill="#f4f7fb" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="4">AEROPORTO DE SANTAREM - PA</text>
+    <rect x="118" y="724" width="462" height="4" rx="2" fill="#d6b04a" fill-opacity=".62"/>
+    <rect width="1200" height="800" fill="#000" filter="url(#grain)" opacity=".26"/>
+  </g>
+</svg>

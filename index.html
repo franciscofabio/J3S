@@ -3,22 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#040812" />
     <title>J3S Tecnologia | Infraestrutura para Órgãos Públicos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#inicio" aria-label="J3S Tecnologia">
-        <span class="brand-mark">
-          <span></span>
-        </span>
-        <span class="brand-text">
-          <strong>J3S</strong>
-          <small>Tecnologia</small>
-        </span>
+        <img class="brand-logo" src="assets/j3s-logo.svg" alt="J3S Tecnologia" />
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
@@ -33,12 +29,8 @@
         <a href="#portfolio">Portfólio</a>
         <a href="#ata">Ata de Preço</a>
         <a href="#diferenciais">Diferenciais</a>
-        <a href="#contato">Contato</a>
-        <a class="nav-cta" href="#contato">Solicitar Contato</a>
-        <a class="nav-login" href="#contato" aria-label="Entrar">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></svg>
-          Entrar
-        </a>
+        <a href="#equipe">Equipe</a>
+        <a class="nav-cta" href="#contato">Solicitar Proposta</a>
       </nav>
     </header>
 
@@ -48,58 +40,73 @@
           <source src="assets/hero-background.webm" type="video/webm" />
           <source src="assets/hero-background.mp4" type="video/mp4" />
         </video>
-        <canvas class="network-canvas" aria-hidden="true"></canvas>
         <div class="container hero-content">
-          <p class="eyebrow">Infraestrutura pública conectada</p>
-          <h1>Soluções em Tecnologia e Infraestrutura para <span>Órgãos Públicos</span> em Todo o Brasil</h1>
-          <p class="hero-subtitle">Especialistas em redes, fibra óptica, cabeamento estruturado, segurança eletrônica e projetos complexos em larga escala.</p>
+          <p class="eyebrow">Engenharia aplicada ao setor público</p>
+          <h1>Infraestrutura tecnológica para <span>o setor público</span></h1>
+          <p class="hero-subtitle">Projetos em redes, fibra óptica, segurança e documentação técnica para instituições que exigem precisão, continuidade e responsabilidade operacional.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#servicos">Conheça nossas Soluções</a>
-            <a class="btn btn-outline" href="#contato">Solicitar Contato</a>
+            <a class="btn btn-outline" href="#contato">Solicitar Proposta</a>
           </div>
-          <div class="hero-badge">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12.75 11.25 15 15 9.75"/><path d="M12 2.5 14.25 5l3.36-.25.64 3.3 2.75 1.95-1.7 2.9.8 3.27-3.18 1.12-1.57 2.98L12 18.95l-3.35 1.32-1.57-2.98-3.18-1.12.8-3.27L3 10l2.75-1.95.64-3.3L9.75 5 12 2.5Z"/></svg>
-            Atuante em Licitações e Adesões desde 2019
+          <div class="hero-trust" aria-label="Indicadores institucionais">
+            <article>
+              <strong>18+</strong>
+              <span>Anos de experiência</span>
+            </article>
+            <article>
+              <strong>420+</strong>
+              <span>Projetos executados</span>
+            </article>
+            <article>
+              <strong>BR</strong>
+              <span>Atuação nacional</span>
+            </article>
           </div>
+          <p class="hero-note">Atuação em licitações e adesões desde 2019.</p>
         </div>
       </section>
 
       <section class="about" id="sobre">
         <div class="container">
           <div class="section-heading">
-            <h2>Grupo <span>J3S</span></h2>
-            <p>Engenharia, inovação e execução técnica a serviço do setor público.</p>
+            <p class="eyebrow">Quem somos</p>
+            <h2>J3S <span>em campo</span></h2>
+            <p>Engenharia elétrica, infraestrutura e tecnologia aplicadas com precisão para operações que exigem continuidade e controle.</p>
           </div>
 
           <div class="about-grid">
             <div class="stats-grid">
               <article class="stat-card dark-card">
                 <strong>18+</strong>
-                <h3>Anos de experiência</h3>
-                <p>Atuação no mercado de tecnologia e infraestrutura desde os anos 2000.</p>
+                <h3>Anos de atuação</h3>
+                <p>Histórico consolidado em projetos, manutenção e implantação de infraestrutura crítica.</p>
               </article>
               <article class="stat-card">
                 <strong>9+</strong>
-                <h3>Anos em órgãos públicos</h3>
-                <p>Projetos via licitações, adesões e contratações simplificadas.</p>
+                <h3>Setores públicos atendidos</h3>
+                <p>Experiência em contratos, adesões e licitações com exigência técnica elevada.</p>
               </article>
               <article class="stat-card accent-card">
-                <strong>24+DF</strong>
-                <h3>Estados atendidos</h3>
-                <p>Presença em diferentes regiões do território nacional.</p>
+                <strong>27 UF</strong>
+                <h3>Cobertura nacional</h3>
+                <p>Equipes e logística ajustadas para diferentes regiões do país.</p>
               </article>
               <article class="stat-card">
                 <strong>420+</strong>
-                <h3>Projetos executados</h3>
-                <p>Alta complexidade, longas distâncias e condições operacionais críticas.</p>
+                <h3>Entregas realizadas</h3>
+                <p>Soluções concluídas em campo com documentação, rastreabilidade e prazo.</p>
               </article>
+              <div class="quality-seal" aria-hidden="true">
+                <img class="quality-seal-art" src="assets/quality-seal.svg" alt="" />
+              </div>
             </div>
 
             <div class="story-panel">
+              <span class="timeline-line" aria-hidden="true"></span>
               <span class="timeline-dot"></span>
-              <p>A <strong>J3S Tecnologia</strong> nasceu para atender instituições que precisam de infraestrutura confiável, documentação técnica clara e execução com responsabilidade em campo.</p>
-              <p>Após anos de experiência em redes corporativas, segurança eletrônica e obras de fibra óptica, nossa equipe se especializou em projetos para prefeituras, autarquias e órgãos federais.</p>
-              <p>Atuamos em diferentes estados brasileiros, adaptando equipes, materiais e logística às necessidades de cada região.</p>
+              <p>A <strong>J3S Engenharia</strong> entrega infraestrutura com foco em desempenho, manutenção simples e operação estável para ambientes públicos e privados.</p>
+              <p>Nosso escopo une elétrica, SPDA, automação, fibra óptica, CFTV, controle de acesso e redes estruturadas em soluções pensadas para crescer com o cliente.</p>
+              <p>Trabalhamos com equipes próprias, planejamento claro e execução limpa, sempre alinhando técnica, prazo e segurança operacional.</p>
             </div>
           </div>
         </div>
@@ -109,46 +116,52 @@
         <div class="container">
           <div class="section-heading invert">
             <p class="eyebrow">Nossos serviços</p>
-            <h2>Soluções Completas em <span>Infraestrutura de TI</span></h2>
-            <p>Portfólio completo de serviços disponíveis via ata, adesões e projetos sob demanda.</p>
+            <h2>Engenharia Elétrica e <span>Infraestrutura Técnica</span></h2>
+            <p>Especialidade principal em elétrica, com portfólio amplo em automação, segurança, telecom e infraestrutura para órgãos públicos e operações críticas.</p>
           </div>
 
           <div class="service-grid">
-            <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></span>
-              <h3>Rede Óptica</h3>
-              <p>Soluções em fibra óptica, backbone, infraestrutura subterrânea e aérea para redes de alta velocidade.</p>
-              <div class="chips"><span>GPON/EPON</span><span>Backbone Óptico</span><span>Fusão de Fibra</span></div>
+            <article class="service-card featured">
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="m13 2-10 12h7l-1 8 10-12h-7z"/></svg></span>
+              <h3>Elétrica</h3>
+              <p>Projetos, adequações e execução com foco em distribuição, proteção, painéis, QGBT e infraestrutura para TI e operação.</p>
+              <div class="chips"><span>QGBT</span><span>Quadros</span><span>Aterramento</span></div>
             </article>
             <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M4 10h3M4 14h3M17 10h3M17 14h3M10 4v3M14 4v3M10 17v3M14 17v3"/></svg></span>
-              <h3>Rede Lógica</h3>
-              <p>Cabeamento estruturado de alta performance para ambientes corporativos, data centers e prédios públicos.</p>
-              <div class="chips"><span>Cat. 6</span><span>Cat. 6A</span><span>Racks</span><span>Patch Panels</span></div>
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 19a7 7 0 0 1 14 0"/><path d="M12 4v7"/><path d="M8 7c1.2-1.1 2.7-1.8 4-1.8S14.8 5.9 16 7"/><path d="M6 12h12"/></svg></span>
+              <h3>SPDA</h3>
+              <p>Sistema de proteção contra descargas atmosféricas, análise técnica, adequação e regularização para edificações e áreas críticas.</p>
+              <div class="chips"><span>Captação</span><span>Aterramento</span><span>Laudos</span></div>
             </article>
             <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M15 10 20 7v10l-5-3Z"/><rect x="3" y="6" width="12" height="12" rx="2"/></svg></span>
-              <h3>CFTV e Segurança</h3>
-              <p>Sistemas de monitoramento e vigilância com câmeras IP, NVR, DVR e analytics 24/7.</p>
-              <div class="chips"><span>Câmeras IP</span><span>NVR e DVR</span><span>Analytics</span></div>
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M5 6h14v12H5z"/><path d="M9 18v-4h6v4"/><path d="M8 10h8"/><path d="M10 6v12"/></svg></span>
+              <h3>Automação, Eficiência Energética e Iluminação Premium</h3>
+              <p>Controle inteligente, economia operacional, cenários de iluminação e modernização de ambientes para alto desempenho.</p>
+              <div class="chips"><span>Automação</span><span>LED</span><span>Economia</span></div>
             </article>
             <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
-              <h3>Controle de Acesso</h3>
-              <p>Biometria, cartões, catracas, fechaduras eletrônicas e integração com sistemas institucionais.</p>
-              <div class="chips"><span>RFID</span><span>Biometria</span><span>Catracas</span></div>
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M4 7h16v10H4z"/><path d="M8 7V4h8v3"/><path d="M8 11h8"/><path d="M7 15h10"/></svg></span>
+              <h3>SDAI e Combate</h3>
+              <p>Detecção, alarme, combate e sinalização com integração para ambientes institucionais e áreas de risco controlado.</p>
+              <div class="chips"><span>SDAI</span><span>Alarme</span><span>Combate</span></div>
             </article>
             <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="m13 2-10 12h9l-1 8 10-12h-9z"/></svg></span>
-              <h3>Rede Elétrica</h3>
-              <p>Infraestrutura elétrica para TI, nobreaks, estabilizadores, aterramento e quadros de distribuição.</p>
-              <div class="chips"><span>Nobreaks</span><span>Aterramento</span><span>QGBT</span></div>
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M9 4h6l1 4h2v3H6V8h2z"/><path d="M8 11h8l-1 9H9z"/><path d="M10 14h4"/></svg></span>
+              <h3>Telefonia</h3>
+              <p>Redes de voz, distribuição, cabeamento e integração com centrais e infraestrutura existente para operação estável.</p>
+              <div class="chips"><span>VoIP</span><span>PABX</span><span>Cabeamento</span></div>
             </article>
             <article class="service-card">
-              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></span>
-              <h3>Consultoria e Projetos</h3>
-              <p>Levantamento técnico, especificações, termos de referência e execução do planejamento à entrega.</p>
-              <div class="chips"><span>Projetos</span><span>Laudos</span><span>TR</span></div>
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M5 5h3"/><path d="M16 5h3"/><path d="M5 19h3"/><path d="M16 19h3"/><path d="M12 9v6"/><path d="M9 12h6"/></svg></span>
+              <h3>Manutenção Preventiva e Laudos Técnicos</h3>
+              <p>Inspeção, manutenção e documentação técnica para reduzir falhas e apoiar decisões com mais previsibilidade.</p>
+              <div class="chips"><span>Preventiva</span><span>Laudos</span><span>Inspeção</span></div>
+            </article>
+            <article class="service-card">
+              <span class="icon-box"><svg viewBox="0 0 24 24"><path d="M6 5h12v10H6z"/><path d="M4 19h16"/><path d="M9 9h6"/><path d="M12 9v6"/><path d="M8 12c1-2 2.8-3 4-3s3 1 4 3"/></svg></span>
+              <h3>CFTV Inteligente e Controle de Acesso Facial</h3>
+              <p>Monitoramento com IA, reconhecimento facial, catracas e gestão de segurança integrada para acesso controlado.</p>
+              <div class="chips"><span>IA</span><span>Facial</span><span>Catracas</span></div>
             </article>
           </div>
 
@@ -163,36 +176,54 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Portfólio</p>
-            <h2>Obras <span>Realizadas</span></h2>
-            <p>Projetos executados em instituições públicas, bases operacionais e órgãos administrativos.</p>
+            <h2>Projetos <span>em andamento</span></h2>
+            <p>A J3S já superou a marca de 500 projetos executados e, nesta seleção, destaca as frentes atualmente em andamento, com contratos de longo prazo e previsão total de conclusão entre 5 e 11 anos. É uma operação estável, orientada por tecnologia e preparada para crescer com consistência.</p>
           </div>
 
           <div class="portfolio-grid">
             <article class="project-card">
-              <div class="project-image image-a"><span>Rede Óptica</span></div>
+              <div class="project-image">
+                <img src="assets/project-maraba.jpg" alt="Pista do Aeroporto de Marabá - PA" loading="lazy" />
+                <span>Projeto ativo</span>
+              </div>
               <div class="project-body">
-                <small>Base Aérea de Anápolis</small>
-                <h3>Força Aérea Brasileira</h3>
-                <p>Backbone óptico subterrâneo com 70 km de fibra óptica.</p>
-                <strong>70 km fibra</strong>
+                <div class="project-head">
+                  <small>Aeroporto de Marabá - PA</small>
+                  <span>01</span>
+                </div>
+                <h3>Infraestrutura Aeroportuária</h3>
+                <p>Serviço de fibra óptica, aterramento, SPDA, elétrica e QGBTs para operação crítica e continuidade de serviço.</p>
+                <strong>Fibra, SPDA e QGBT</strong>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-image image-b"><span>Rede Lógica</span></div>
+              <div class="project-image">
+                <img src="assets/project-santarem.jpg" alt="Aeroporto de Santarém - PA" loading="lazy" />
+                <span>Em andamento</span>
+              </div>
               <div class="project-body">
-                <small>Parnamirim - RN</small>
-                <h3>Prefeitura Municipal</h3>
-                <p>Instalação de cabeamento estruturado com 430 pontos de rede.</p>
-                <strong>430 pontos</strong>
+                <div class="project-head">
+                  <small>Aeroporto de Santarém - PA</small>
+                  <span>02</span>
+                </div>
+                <h3>Infraestrutura de CPD</h3>
+                <p>Redes estruturadas, certificação, montagem de CPD e rede elétrica estabilizada para ambiente de alta disponibilidade.</p>
+                <strong>CPD e certificação</strong>
               </div>
             </article>
             <article class="project-card">
-              <div class="project-image image-c"><span>Segurança</span></div>
+              <div class="project-image">
+                <img src="assets/project-mcti.jpg" alt="Fachada da Esplanada dos Ministérios em Brasília com presença do MCTI" loading="lazy" />
+                <span>Projeto ativo</span>
+              </div>
               <div class="project-body">
-                <small>GSI - Presidência</small>
-                <h3>Gabinete Institucional</h3>
-                <p>Organização de racks, CFTV e infraestrutura de segurança.</p>
-                <strong>Projeto concluído</strong>
+                <div class="project-head">
+                  <small>Ministério da Tecnologia - Brasília</small>
+                  <span>03</span>
+                </div>
+                <h3>Ambiente Crítico com IA</h3>
+                <p>Sala segura, datacenter, cabeamento estruturado, CFTV com IA e controle de acesso facial com catracas.</p>
+                <strong>Segurança e IA</strong>
               </div>
             </article>
           </div>
@@ -276,6 +307,20 @@
             <p class="eyebrow">Abrangência nacional</p>
             <h2>Atuação em <span>Todo o Brasil</span></h2>
             <p>Projetos realizados em quase todos os estados da federação. Nossa equipe possui experiência em executar obras em diferentes regiões, adaptando-se às condições locais e superando desafios logísticos.</p>
+            <div class="map-summary" aria-label="Resumo da operação">
+              <article>
+                <strong>19</strong>
+                <span>Estados mapeados</span>
+              </article>
+              <article>
+                <strong>5</strong>
+                <span>Regiões atendidas</span>
+              </article>
+              <article>
+                <strong>100%</strong>
+                <span>Interação ativa</span>
+              </article>
+            </div>
             <article class="state-panel">
               <span class="state-code">BR</span>
               <div>
@@ -315,6 +360,114 @@
         </div>
       </section>
 
+      <section class="team section-dark" id="equipe">
+        <div class="container">
+          <div class="section-heading invert">
+            <p class="eyebrow">Equipe</p>
+            <h2>Time <span>Multidisciplinar</span></h2>
+            <p>Profissionais organizados por área para garantir execução técnica, gestão, atendimento e continuidade operacional em cada projeto.</p>
+          </div>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-tecnica.svg" alt="Equipe técnica em ambiente corporativo" loading="lazy" />
+                <span>Equipe Técnica</span>
+              </div>
+              <div class="team-body">
+                <h3>Engenharia, Campo e Certificação</h3>
+                <p>Equipe especializada em fibra óptica, cabeamento estruturado, redes corporativas, CFTV, certificação e leitura de projeto executivo.</p>
+                <ul class="team-tags">
+                  <li>NR-10 e NR-35</li>
+                  <li>Certificação de rede</li>
+                  <li>Fusão e DIO</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-gerencia.svg" alt="Equipe de gerência e supervisão em ambiente executivo" loading="lazy" />
+                <span>Gestão</span>
+              </div>
+              <div class="team-body">
+                <h3>Gerência e Supervisão</h3>
+                <p>Responsáveis pelo planejamento, cronograma, controle de qualidade, alinhamento com o cliente e acompanhamento das entregas.</p>
+                <ul class="team-tags">
+                  <li>Gestão de obra</li>
+                  <li>Supervisão técnica</li>
+                  <li>Controle de prazo</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-administrativa.svg" alt="Equipe administrativa em escritório corporativo" loading="lazy" />
+                <span>Administração</span>
+              </div>
+              <div class="team-body">
+                <h3>Administrativa e Operacional</h3>
+                <p>Estrutura responsável por documentação, contratos, organização financeira, suporte interno e acompanhamento de processos.</p>
+                <ul class="team-tags">
+                  <li>Documentação</li>
+                  <li>Contratos</li>
+                  <li>Rotina administrativa</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-comercial.svg" alt="Equipe comercial em reunião estratégica" loading="lazy" />
+                <span>Comercial</span>
+              </div>
+              <div class="team-body">
+                <h3>Comercial e Vendas</h3>
+                <p>Atendimento consultivo para entender a necessidade do órgão, estruturar a proposta e transformar a demanda em solução adequada.</p>
+                <ul class="team-tags">
+                  <li>Propostas</li>
+                  <li>Negociação</li>
+                  <li>Relacionamento</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-pos-venda.svg" alt="Equipe de pós-venda acompanhando cliente corporativo" loading="lazy" />
+                <span>Pós-venda</span>
+              </div>
+              <div class="team-body">
+                <h3>Pós-venda e Relacionamento</h3>
+                <p>Acompanhamento após a entrega, validação de satisfação, suporte à fiscalização e apoio à continuidade do serviço contratado.</p>
+                <ul class="team-tags">
+                  <li>Acompanhamento</li>
+                  <li>Suporte à fiscalização</li>
+                  <li>Continuidade</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="team-card">
+              <div class="team-photo">
+                <img src="assets/team-suporte.svg" alt="Equipe de manutenção e suporte técnico em centro de operações" loading="lazy" />
+                <span>Suporte</span>
+              </div>
+              <div class="team-body">
+                <h3>Manutenção e Suporte Técnico</h3>
+                <p>Equipe de resposta para manutenção preventiva e corretiva, ajustes em campo e suporte técnico continuado para as operações.</p>
+                <ul class="team-tags">
+                  <li>Manutenção preventiva</li>
+                  <li>Suporte remoto</li>
+                  <li>Correções em campo</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="contact" id="contato">
         <div class="container contact-grid">
           <div>
@@ -329,12 +482,14 @@
           </div>
           <form class="contact-form">
             <h3>Solicite um Orçamento</h3>
-            <label>Assunto do contato <span>*</span><select required><option value="">Selecione o assunto...</option><option>Rede óptica</option><option>Cabeamento estruturado</option><option>CFTV e segurança</option><option>Ata de Registro de Preço</option></select></label>
-            <label>Nome completo <span>*</span><input type="text" placeholder="Seu nome" required /></label>
-            <label>E-mail <span>*</span><input type="email" placeholder="seu@email.gov.br" required /></label>
-            <label>Telefone <span>*</span><input type="tel" placeholder="(00) 00000-0000" required /></label>
-            <label>Órgão/Instituição <span>*</span><input type="text" placeholder="Nome do órgão" required /></label>
-            <label>Mensagem <span>*</span><textarea placeholder="Descreva sua necessidade" required></textarea></label>
+            <div class="contact-form-grid">
+              <label class="field-full">Assunto do contato <span>*</span><select required><option value="">Selecione o assunto...</option><option>Rede óptica</option><option>Cabeamento estruturado</option><option>CFTV e segurança</option><option>Ata de Registro de Preço</option></select></label>
+              <label>Nome completo <span>*</span><input type="text" placeholder="Seu nome" required /></label>
+              <label>Órgão/Instituição <span>*</span><input type="text" placeholder="Nome do órgão" required /></label>
+              <label>E-mail <span>*</span><input type="email" placeholder="seu@email.gov.br" required /></label>
+              <label>Telefone <span>*</span><input type="tel" placeholder="(00) 00000-0000" required /></label>
+              <label class="field-full">Mensagem <span>*</span><textarea placeholder="Descreva sua necessidade" required></textarea></label>
+            </div>
             <button class="btn btn-primary" type="submit">Enviar Solicitação</button>
           </form>
         </div>
@@ -344,13 +499,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <a class="brand footer-brand" href="#inicio" aria-label="J3S Tecnologia">
-          <span class="brand-mark">
-            <span></span>
-          </span>
-          <span class="brand-text">
-            <strong>J3S</strong>
-            <small>Tecnologia</small>
-          </span>
+          <img class="brand-logo" src="assets/j3s-logo.svg" alt="J3S Tecnologia" />
         </a>
 
         <div class="footer-services" aria-label="Serviços oferecidos">
@@ -376,16 +525,37 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v3H6v4h3v5h4v-5h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg>
           </a>
           <a href="#contato" aria-label="WhatsApp">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.9a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.2-4.4A8.4 8.4 0 1 1 20.5 12Z"/><path d="M8.6 8.4c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .6l-.4.5c-.1.1-.2.3-.1.5.4.9 1.2 1.8 2.2 2.3.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.3.4.5 0 .5-.3 1.2-.7 1.5-.6.4-1.6.5-3.3-.2-2.8-1.2-4.6-3.9-4.8-5.8-.1-.9.1-1.5.2-1.7Z"/></svg>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 12a8.5 8.5 0 0 1-12.9 7.2L3.5 20.5l1.3-4.1A8.5 8.5 0 1 1 20.5 12Z" />
+              <path d="M9 8.7c.2-.4.4-.6.8-.6h.4c.3 0 .5.1.6.4l.9 2.1c.1.2.1.4 0 .6l-.4.5c-.1.1-.2.3-.1.5.4.9 1.1 1.8 2.1 2.3.2.1.4.1.5-.1l.6-.7c.2-.2.4-.3.7-.1l1.8.9c.2.1.3.3.3.6 0 .5-.2 1.1-.6 1.4-.5.4-1.4.5-2.8-.1-2.7-1.2-4.5-3.7-4.8-5.8-.1-.9.1-1.5.2-1.6Z" />
+            </svg>
           </a>
         </div>
       </div>
       <p class="footer-copy">© 2026 J3S Tecnologia. Todos os direitos reservados.</p>
     </footer>
 
-    <a class="whatsapp" href="#contato" aria-label="Contato via WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.9a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.2-4.4A8.4 8.4 0 1 1 20.5 12Z"/><path d="M8.6 8.4c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .5.4l.8 1.9c.1.2.1.4 0 .6l-.4.5c-.1.1-.2.3-.1.5.4.9 1.2 1.8 2.2 2.3.2.1.4.1.5-.1l.6-.7c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.3.4.5 0 .5-.3 1.2-.7 1.5-.6.4-1.6.5-3.3-.2-2.8-1.2-4.6-3.9-4.8-5.8-.1-.9.1-1.5.2-1.7Z"/></svg>
-    </a>
+    <div class="whatsapp-float">
+      <div class="whatsapp-panel" aria-hidden="true">
+        <span class="whatsapp-panel-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M13 2 4 13h6l-1 9 11-13h-7z" />
+          </svg>
+        </span>
+        <div>
+          <strong>Atendimento ZAP</strong>
+          <span>Resposta rápida para demandas técnicas e comerciais</span>
+        </div>
+      </div>
+      <button class="whatsapp" type="button" aria-label="Abrir atendimento ZAP" aria-expanded="false">
+        <span class="whatsapp-core" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.5 12a8.5 8.5 0 0 1-12.9 7.2L3.5 20.5l1.3-4.1A8.5 8.5 0 1 1 20.5 12Z" />
+            <path d="M9 8.7c.2-.4.4-.6.8-.6h.4c.3 0 .5.1.6.4l.9 2.1c.1.2.1.4 0 .6l-.4.5c-.1.1-.2.3-.1.5.4.9 1.1 1.8 2.1 2.3.2.1.4.1.5-.1l.6-.7c.2-.2.4-.3.7-.1l1.8.9c.2.1.3.3.3.6 0 .5-.2 1.1-.6 1.4-.5.4-1.4.5-2.8-.1-2.7-1.2-4.5-3.7-4.8-5.8-.1-.9.1-1.5.2-1.6Z" />
+          </svg>
+        </span>
+      </button>
+    </div>
 
     <script src="script.js"></script>
   </body>

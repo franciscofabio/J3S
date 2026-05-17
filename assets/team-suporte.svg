@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none" role="img" aria-label="Equipe de manutenção e suporte técnico em centro de operações">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#09111c"/>
+      <stop offset="1" stop-color="#03060c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="120" x2="980" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fb7185"/>
+      <stop offset="0.55" stop-color="#f97316"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(894 228) rotate(90) scale(322 252)">
+      <stop stop-color="#fb7185" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#fb7185" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="42" fill="url(#bg)"/>
+  <rect x="74" y="90" width="360" height="724" rx="30" fill="#07101a" stroke="#25364b" stroke-opacity=".72"/>
+  <rect x="110" y="132" width="288" height="76" rx="18" fill="#101a28"/>
+  <rect x="110" y="228" width="288" height="76" rx="18" fill="#101a28"/>
+  <rect x="110" y="324" width="288" height="76" rx="18" fill="#101a28"/>
+  <circle cx="938" cy="210" r="244" fill="url(#glow)"/>
+  <circle cx="900" cy="176" r="100" fill="#fb7185" fill-opacity=".12" filter="url(#blur)"/>
+  <path d="M494 630c0-100 80-182 178-182s178 82 178 182v46H494v-46Z" fill="#09131d"/>
+  <path d="M564 402c0-58 48-104 108-104s108 46 108 104-48 104-108 104-108-46-108-104Z" fill="#dce8f3"/>
+  <path d="M520 716c8-84 72-140 150-140s140 56 150 140l8 62H512l8-62Z" fill="url(#accent)"/>
+  <path d="M578 608c24-20 52-30 82-30s58 10 82 30l-16 168H594l-16-168Z" fill="#0d1726" opacity=".72"/>
+  <path d="M536 458c34-28 78-42 128-42s94 14 126 42" stroke="#fb7185" stroke-opacity=".45" stroke-width="10" stroke-linecap="round"/>
+  <path d="M574 350c0 34 28 62 62 62s62-28 62-62-28-62-62-62-62 28-62 62Z" fill="#f8fbff"/>
+  <rect x="824" y="560" width="230" height="168" rx="28" fill="#091521" stroke="#25364b" stroke-opacity=".8"/>
+  <path d="M850 606h180M850 638h140M850 670h164" stroke="#fb7185" stroke-opacity=".24" stroke-width="8" stroke-linecap="round"/>
+  <path d="M854 592l18 18 30-30" stroke="#22c55e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="116" cy="162" r="12" fill="#fb7185" fill-opacity=".75"/>
+  <circle cx="116" cy="260" r="8" fill="#f97316" fill-opacity=".45"/>
+  <circle cx="116" cy="358" r="8" fill="#fbbf24" fill-opacity=".45"/>
+  <circle cx="116" cy="456" r="8" fill="#fb7185" fill-opacity=".45"/>
+  <text x="88" y="812" fill="#d9e7f4" fill-opacity=".82" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="6">MANUTENÇÃO E SUPORTE</text>
+  <rect x="88" y="832" width="372" height="4" rx="2" fill="#fb7185" fill-opacity=".55"/>
+</svg>

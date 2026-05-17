@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none" role="img" aria-label="Ministerio da Tecnologia Brasilia">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b9c7d6"/>
+      <stop offset="0.55" stop-color="#8d99a7"/>
+      <stop offset="1" stop-color="#5b6670"/>
+    </linearGradient>
+    <linearGradient id="façade" x1="180" y1="130" x2="1000" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9e0e8"/>
+      <stop offset="0.45" stop-color="#9fa8b3"/>
+      <stop offset="1" stop-color="#676f77"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d7e6f7"/>
+      <stop offset="1" stop-color="#5d7fa2"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 230) rotate(90) scale(360 220)">
+      <stop stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="800" rx="40"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#sky)"/>
+    <circle cx="934" cy="220" r="260" fill="url(#light)"/>
+    <rect y="508" width="1200" height="292" fill="#39414a"/>
+    <rect x="82" y="104" width="1036" height="618" rx="28" fill="#d8dde2" fill-opacity=".22"/>
+    <rect x="118" y="128" width="900" height="448" rx="18" fill="url(#glass)" opacity=".72"/>
+    <rect x="118" y="128" width="900" height="448" rx="18" fill="#435161" opacity=".18"/>
+    <g opacity=".9">
+      <rect x="144" y="154" width="22" height="382" fill="#f0f3f7" fill-opacity=".55"/>
+      <rect x="178" y="154" width="14" height="382" fill="#0a1016" fill-opacity=".16"/>
+    </g>
+    <g stroke="#6f7d89" stroke-opacity=".34" stroke-width="2">
+      <path d="M206 158h742"/>
+      <path d="M206 194h742"/>
+      <path d="M206 230h742"/>
+      <path d="M206 266h742"/>
+      <path d="M206 302h742"/>
+      <path d="M206 338h742"/>
+      <path d="M206 374h742"/>
+      <path d="M206 410h742"/>
+      <path d="M206 446h742"/>
+      <path d="M206 482h742"/>
+      <path d="M206 518h742"/>
+    </g>
+    <g opacity=".92">
+      <path d="M162 556h912v44H162z" fill="#26303a"/>
+      <path d="M190 600h856v20H190z" fill="#1b232c"/>
+    </g>
+    <g>
+      <rect x="184" y="170" width="220" height="330" rx="10" fill="#d9e2ea" fill-opacity=".62"/>
+      <rect x="422" y="170" width="220" height="330" rx="10" fill="#d9e2ea" fill-opacity=".62"/>
+      <rect x="660" y="170" width="220" height="330" rx="10" fill="#d9e2ea" fill-opacity=".62"/>
+      <g fill="#7d8c98" fill-opacity=".3">
+        <rect x="198" y="186" width="192" height="20" rx="8"/>
+        <rect x="198" y="222" width="192" height="20" rx="8"/>
+        <rect x="198" y="258" width="192" height="20" rx="8"/>
+        <rect x="198" y="294" width="192" height="20" rx="8"/>
+        <rect x="198" y="330" width="192" height="20" rx="8"/>
+        <rect x="198" y="366" width="192" height="20" rx="8"/>
+        <rect x="198" y="402" width="192" height="20" rx="8"/>
+        <rect x="198" y="438" width="192" height="20" rx="8"/>
+      </g>
+      <g fill="#7d8c98" fill-opacity=".3">
+        <rect x="436" y="186" width="192" height="20" rx="8"/>
+        <rect x="436" y="222" width="192" height="20" rx="8"/>
+        <rect x="436" y="258" width="192" height="20" rx="8"/>
+        <rect x="436" y="294" width="192" height="20" rx="8"/>
+        <rect x="436" y="330" width="192" height="20" rx="8"/>
+        <rect x="436" y="366" width="192" height="20" rx="8"/>
+        <rect x="436" y="402" width="192" height="20" rx="8"/>
+        <rect x="436" y="438" width="192" height="20" rx="8"/>
+      </g>
+      <g fill="#7d8c98" fill-opacity=".3">
+        <rect x="674" y="186" width="192" height="20" rx="8"/>
+        <rect x="674" y="222" width="192" height="20" rx="8"/>
+        <rect x="674" y="258" width="192" height="20" rx="8"/>
+        <rect x="674" y="294" width="192" height="20" rx="8"/>
+        <rect x="674" y="330" width="192" height="20" rx="8"/>
+        <rect x="674" y="366" width="192" height="20" rx="8"/>
+        <rect x="674" y="402" width="192" height="20" rx="8"/>
+        <rect x="674" y="438" width="192" height="20" rx="8"/>
+      </g>
+    </g>
+    <g fill="#e9edf2" fill-opacity=".92">
+      <text x="770" y="182" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">MINISTERIO DA</text>
+      <text x="700" y="210" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">CIENCIA E TECNOLOGIA</text>
+      <text x="720" y="252" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">SEGURANCA E INOVACAO</text>
+    </g>
+    <rect x="768" y="290" width="210" height="96" rx="10" fill="#f0f3f7" fill-opacity=".12"/>
+    <rect x="794" y="314" width="158" height="10" rx="5" fill="#f0f3f7" fill-opacity=".5"/>
+    <rect x="794" y="336" width="184" height="10" rx="5" fill="#f0f3f7" fill-opacity=".4"/>
+    <rect x="794" y="358" width="132" height="10" rx="5" fill="#f0f3f7" fill-opacity=".3"/>
+    <path d="M170 688l122-30 136 18 144-20 136 28 152-22 126 14 82-8" stroke="#d6b04a" stroke-opacity=".18" stroke-width="10" stroke-linecap="round"/>
+    <text x="118" y="708" fill="#f4f7fb" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="3">MINISTERIO DA TECNOLOGIA - BSB</text>
+    <rect x="118" y="724" width="560" height="4" rx="2" fill="#d6b04a" fill-opacity=".62"/>
+    <rect width="1200" height="800" fill="#000" filter="url(#grain)" opacity=".22"/>
+  </g>
+</svg>
