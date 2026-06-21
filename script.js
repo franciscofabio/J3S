@@ -2,6 +2,9 @@ const navToggle = document.querySelector(".nav-toggle");
 const mainNav = document.querySelector(".main-nav");
 const whatsappWrap = document.querySelector(".whatsapp-float");
 const whatsappButton = document.querySelector(".whatsapp");
+const whatsappPanel = document.querySelector(".whatsapp-panel");
+const whatsappForm = document.querySelector(".whatsapp-form");
+const businessWhatsAppNumber = "5561985641589";
 
 navToggle?.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("is-open");
@@ -18,6 +21,7 @@ mainNav?.querySelectorAll("a").forEach((link) => {
 whatsappButton?.addEventListener("click", () => {
   const isOpen = whatsappWrap?.classList.toggle("is-open");
   whatsappButton.setAttribute("aria-expanded", String(Boolean(isOpen)));
+  whatsappPanel?.setAttribute("aria-hidden", String(!isOpen));
 });
 
 document.addEventListener("click", (event) => {
@@ -27,6 +31,7 @@ document.addEventListener("click", (event) => {
 
   whatsappWrap.classList.remove("is-open");
   whatsappButton?.setAttribute("aria-expanded", "false");
+  whatsappPanel?.setAttribute("aria-hidden", "true");
 });
 
 document.addEventListener("keydown", (event) => {
@@ -36,6 +41,23 @@ document.addEventListener("keydown", (event) => {
 
   whatsappWrap?.classList.remove("is-open");
   whatsappButton?.setAttribute("aria-expanded", "false");
+  whatsappPanel?.setAttribute("aria-hidden", "true");
+});
+
+whatsappForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(whatsappForm);
+  const name = String(formData.get("clientName") || "").trim();
+  const phone = String(formData.get("clientPhone") || "").trim();
+  const service = String(formData.get("clientService") || "").trim();
+
+  if (!name || !phone || !service) {
+    return;
+  }
+
+  const message = `Sou ${name}, preciso de um orçamento de serviços ${service}. Meu WhatsApp para retorno: ${phone}.`;
+  const url = `https://wa.me/${businessWhatsAppNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
 });
 
 const stateData = [
@@ -59,6 +81,27 @@ const stateData = [
   { uf: "SC", name: "Santa Catarina", region: "Sul", capital: "Florianópolis", x: 170, y: 501, color: "var(--blue)", service: "Cabeamento Cat. 6A", description: "Infraestrutura de alta performance para redes de dados.", projects: ["Cat. 6A", "Nobreaks e UPS", "Certificação"] },
   { uf: "RS", name: "Rio Grande do Sul", region: "Sul", capital: "Porto Alegre", x: 101, y: 482, color: "var(--blue)", service: "Infraestrutura completa", description: "Projetos com rede, energia, segurança e entrega assistida.", projects: ["Rede óptica", "Rede elétrica", "CFTV"] },
 ];
+
+const defaultStateProof = {
+  status: "Capacidade operacional",
+  evidence: "Equipe preparada para mobilização, documentação técnica e execução padronizada conforme demanda do contrato.",
+  proofItems: ["Atendimento nacional", "Planejamento de campo", "Documentação de aceite"],
+};
+const stateProofs = {
+  PA: {
+    status: "Projetos documentados",
+    evidence: "Referências no Pará com frentes aeroportuárias em Marabá e Santarém destacadas no portfólio.",
+    proofItems: ["Aeroporto de Marabá", "Aeroporto de Santarém", "Fibra, SPDA, CPD e QGBT"],
+  },
+  DF: {
+    status: "Projeto documentado",
+    evidence: "Referência institucional em Brasília com ambiente crítico, datacenter, CFTV com IA e controle de acesso.",
+    proofItems: ["MCTI - Brasília", "Datacenter", "Segurança eletrônica com IA"],
+  },
+};
+stateData.forEach((state) => {
+  Object.assign(state, defaultStateProof, stateProofs[state.uf] || {});
+});
 
 const pointsGroup = document.querySelector(".map-points");
 const statePanel = document.querySelector(".state-panel");
@@ -122,7 +165,12 @@ function renderStatePanel(state) {
       <h3>${state.name}</h3>
       <strong class="state-service">${state.service}</strong>
       <p>${state.description}</p>
+      <div class="state-proof">
+        <span>${state.status}</span>
+        <p>${state.evidence}</p>
+      </div>
       <div class="state-projects">${state.projects.map((project) => `<span>${project}</span>`).join("")}</div>
+      <div class="state-projects state-proof-items">${state.proofItems.map((item) => `<span>${item}</span>`).join("")}</div>
     </div>
   `;
 }
@@ -132,6 +180,9 @@ if (pointsGroup) {
     const coords = stateCoordinates[state.uf] ? geoToSvg(stateCoordinates[state.uf]) : { x: state.x, y: state.y };
     const point = document.createElementNS("http://www.w3.org/2000/svg", "g");
     point.classList.add("map-point");
+    if (stateProofs[state.uf]) {
+      point.classList.add("has-proof");
+    }
     point.dataset.uf = state.uf;
     point.setAttribute("tabindex", "0");
     point.setAttribute("role", "button");
@@ -264,3 +315,142 @@ contactForm?.addEventListener("submit", (event) => {
     contactForm.reset();
   }, 2400);
 });
+
+const clientCarousel = document.querySelector(".client-carousel");
+const clientTrack = clientCarousel?.querySelector(".client-track");
+const clientPrevButton = clientCarousel?.querySelector(".client-carousel-prev");
+const clientNextButton = clientCarousel?.querySelector(".client-carousel-next");
+
+if (clientCarousel && clientTrack) {
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let loopWidth = 0;
+  let cardStep = 220;
+  let trackOffset = 0;
+  let lastFrameTime = performance.now();
+  let dragStartX = 0;
+  let dragStartOffset = 0;
+  let activePointerId = null;
+  let isDragging = false;
+  let isHovered = false;
+  let navigation = null;
+
+  const normalizeOffset = (value) => {
+    if (!loopWidth) return value;
+
+    while (value <= -loopWidth) value += loopWidth;
+    while (value > 0) value -= loopWidth;
+    return value;
+  };
+
+  const renderClientTrack = () => {
+    clientTrack.style.transform = `translate3d(${normalizeOffset(trackOffset)}px, 0, 0)`;
+  };
+
+  const measureClientTrack = () => {
+    const cards = Array.from(clientTrack.children);
+    const duplicateStart = cards[Math.floor(cards.length / 2)];
+    if (!cards.length || !duplicateStart) return;
+
+    loopWidth = duplicateStart.offsetLeft - cards[0].offsetLeft;
+    cardStep = cards[1] ? cards[1].offsetLeft - cards[0].offsetLeft : cards[0].offsetWidth;
+    trackOffset = normalizeOffset(trackOffset);
+    renderClientTrack();
+  };
+
+  const moveClientTrack = (distance) => {
+    navigation = null;
+
+    if (reducedMotion.matches) {
+      trackOffset = normalizeOffset(trackOffset + distance);
+      renderClientTrack();
+      return;
+    }
+
+    navigation = {
+      from: normalizeOffset(trackOffset),
+      to: normalizeOffset(trackOffset) + distance,
+      startedAt: performance.now(),
+      duration: 420,
+    };
+  };
+
+  const animateClientTrack = (time) => {
+    const deltaTime = Math.min(time - lastFrameTime, 40);
+    lastFrameTime = time;
+
+    if (navigation) {
+      const progress = Math.min((time - navigation.startedAt) / navigation.duration, 1);
+      const easedProgress = 1 - Math.pow(1 - progress, 3);
+      trackOffset = navigation.from + (navigation.to - navigation.from) * easedProgress;
+
+      if (progress === 1) {
+        trackOffset = normalizeOffset(navigation.to);
+        navigation = null;
+      }
+    } else if (!reducedMotion.matches && !isDragging && !isHovered) {
+      trackOffset = normalizeOffset(trackOffset - deltaTime * 0.025);
+    }
+
+    renderClientTrack();
+    requestAnimationFrame(animateClientTrack);
+  };
+
+  clientCarousel.addEventListener("pointerdown", (event) => {
+    if (event.button !== 0 || event.target.closest(".client-carousel-control")) return;
+
+    navigation = null;
+    isDragging = true;
+    activePointerId = event.pointerId;
+    dragStartX = event.clientX;
+    dragStartOffset = normalizeOffset(trackOffset);
+    trackOffset = dragStartOffset;
+    clientCarousel.classList.add("is-dragging");
+    clientCarousel.setPointerCapture(event.pointerId);
+  });
+
+  clientCarousel.addEventListener("pointermove", (event) => {
+    if (!isDragging || event.pointerId !== activePointerId) return;
+    trackOffset = dragStartOffset + event.clientX - dragStartX;
+    renderClientTrack();
+  });
+
+  const finishClientDrag = (event) => {
+    if (!isDragging || event.pointerId !== activePointerId) return;
+
+    isDragging = false;
+    activePointerId = null;
+    trackOffset = normalizeOffset(trackOffset);
+    clientCarousel.classList.remove("is-dragging");
+
+    if (clientCarousel.hasPointerCapture(event.pointerId)) {
+      clientCarousel.releasePointerCapture(event.pointerId);
+    }
+  };
+
+  clientCarousel.addEventListener("pointerup", finishClientDrag);
+  clientCarousel.addEventListener("pointercancel", finishClientDrag);
+  clientCarousel.addEventListener("mouseenter", () => {
+    isHovered = true;
+  });
+  clientCarousel.addEventListener("mouseleave", () => {
+    isHovered = false;
+  });
+  clientCarousel.addEventListener("keydown", (event) => {
+    if (event.key === "ArrowLeft") {
+      event.preventDefault();
+      moveClientTrack(cardStep);
+    }
+
+    if (event.key === "ArrowRight") {
+      event.preventDefault();
+      moveClientTrack(-cardStep);
+    }
+  });
+
+  clientPrevButton?.addEventListener("click", () => moveClientTrack(cardStep));
+  clientNextButton?.addEventListener("click", () => moveClientTrack(-cardStep));
+  window.addEventListener("resize", measureClientTrack);
+
+  measureClientTrack();
+  requestAnimationFrame(animateClientTrack);
+}
